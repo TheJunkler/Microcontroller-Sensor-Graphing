@@ -53,4 +53,10 @@ Native to Java (release 1.8):
   <li>Milk</li>
 </ul>
 
+Open Source:
+<ul>
+  <li>JFreeChart</li>
+  <li>JSerialComm <a href="https://www.w3schools.com/">author's site!</a></li>
+</ul>
+
 
