@@ -55,7 +55,7 @@ This worked great! The only issue was that this program could only read one of t
 
 With some formatting gymnastics in the Arduino software and further reasearch into the communications library I implemented, I was able to place the serial stream data inside of a character array which could be sorted and displayed as multiple graphs from the java program.
 
-// GIF OF ALL THREE DATA STREAMS
+![graphingLightTempHumData](https://user-images.githubusercontent.com/52724843/109571934-a159a300-7aa9-11eb-83fa-1eb0246ad7c1.gif)
 
 The finished product works much better than I could have imagined! In addition to the real-time stream, the program comes equiped with cache saving options for large streams of data that the user could review at any time. I have some mechanical projects in the works that this graphing software would help out on, so I will continue to make improvements and retrofit as needed. Overall, I think the project was a success!
 
