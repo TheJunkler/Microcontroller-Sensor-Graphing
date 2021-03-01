@@ -42,7 +42,9 @@ Using Arduino's native language I created a simple prgram that takes the input d
 As you can see, when light is applied to the sensor the ADC reading shoots up to the 650 range and when removed drops back down to around 400
 
 ### Java Programming
-With a stream of serial now text available, I then created a java program to take the data stream from the arduino (via the used USB port) and plot the data in real-time to a graph. 
+
+<b>First Iteration</b>
+With a steam of serial data now available, I then created a java program to take the data from one of the desired sensors on the Arduino (via USB port) and plots the stream in real-time to a line graph.
 
 <b> Libraries Used </b>
 
