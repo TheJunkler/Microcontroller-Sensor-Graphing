@@ -57,7 +57,7 @@ With some formatting gymnastics in the Arduino software and further reasearch in
 
 // GIF OF ALL THREE DATA STREAMS
 
-The finished product works much better than I could have imagined! In addition to the real-time stream, the program comes equiped with cache saving options for large streams of data that the user could review at any time. I have some mechanical projects in the works that this graphing software would help out on, so I will continue to make improvements and retrofit as needed. 
+The finished product works much better than I could have imagined! In addition to the real-time stream, the program comes equiped with cache saving options for large streams of data that the user could review at any time. I have some mechanical projects in the works that this graphing software would help out on, so I will continue to make improvements and retrofit as needed. Overall, I think the project was a success!
 
 <b> Libraries Used </b>
 
