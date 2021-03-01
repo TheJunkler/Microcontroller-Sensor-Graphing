@@ -28,3 +28,11 @@ My fiancé wants to start a garden in the backyard so that we can stop eating ou
  ### Wiring Diagram
  
 ![wiringDiagram](https://user-images.githubusercontent.com/52724843/109442099-72352a00-79f4-11eb-91a4-60e2a9712bfe.PNG)
+
+
+## The Software
+
+Using Arduino's native language I was able to create a simple prgram that takes the input data from each sensor and display the results as serial text
+
+<i>Testing the LDR Photoresistor with Arduino serial monitor</i>
+![serialMonitor](https://user-images.githubusercontent.com/52724843/109443267-58e1ad00-79f7-11eb-9d21-92ab7725723b.gif)
