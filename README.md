@@ -33,7 +33,7 @@ My fiancé wants to start a garden in the backyard so that we can stop eating ou
 ## The Software
 
 ### Arduino Programming
-Using Arduino's native language I was able to create a simple prgram that takes the input data from each sensor and display the results as serial text
+Using Arduino's native language I created a simple prgram that takes the input data from each sensor and display the results as serial text
 
 <i>Testing the LDR Photoresistor with Arduino serial monitor</i><t>
  
