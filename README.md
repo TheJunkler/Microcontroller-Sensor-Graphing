@@ -9,4 +9,6 @@ My fiancé wants to start a garden in the backyard so that we can stop eating ou
 
 For this project I decided to use Arduino-UNO and various low voltage sensors to make the device compact
 
+ <b> DHT11 Temperature and Humidity Sensor![TempHumSensor](https://user-images.githubusercontent.com/52724843/109441571-d22ad100-79f2-11eb-9603-003e05d13e31.PNG)
+
 ![wiringDiagram](https://user-images.githubusercontent.com/52724843/109441306-2f725280-79f2-11eb-949f-2661b88966e6.PNG)
