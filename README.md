@@ -37,3 +37,4 @@ Using Arduino's native language I was able to create a simple prgram that takes 
 <i>Testing the LDR Photoresistor with Arduino serial monitor</i><t>
  
 ![serialMonitor](https://user-images.githubusercontent.com/52724843/109443267-58e1ad00-79f7-11eb-9d21-92ab7725723b.gif)
+As you can see, when light is applied to the sensor the ADC reading shoots up to the 650 range and when removed drops back down to around 400
