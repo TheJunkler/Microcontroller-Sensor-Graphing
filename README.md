@@ -55,8 +55,8 @@ Native to Java (release 1.8):
 
 Open Source:
 <ul>
-  <li>JFreeChart</li>
-  <li>JSerialComm <a href="https://www.w3schools.com/">author's site!</a></li>
+  <li>JFreeChart <a href="https://www.jfree.org/jfreechart/">click here</a></li>
+  <li>JSerialComm <a href="https://fazecast.github.io/jSerialComm/">click here</a></li>
 </ul>
 
 
