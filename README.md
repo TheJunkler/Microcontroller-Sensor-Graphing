@@ -57,7 +57,7 @@ With some formatting gymnastics in the Arduino software and further reasearch in
 
 // GIF OF ALL THREE DATA STREAMS
 
-The finished product works much better than I could have imagined!  
+The finished product works much better than I could have imagined!
 
 <b> Libraries Used </b>
 
@@ -73,5 +73,9 @@ Open Source:
   <li>JFreeChart <a href="https://www.jfree.org/jfreechart/">click here</a></li>
   <li>JSerialComm <a href="https://fazecast.github.io/jSerialComm/">click here</a></li>
 </ul>
+
+## Conclusion
+
+After preseting the project to my SO, she said that it is "cool" and "impressive", but that she still will not be using it for her garden... Her loss! 
 
 
