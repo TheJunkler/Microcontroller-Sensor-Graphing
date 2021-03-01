@@ -5,4 +5,6 @@ My fiancé wants to start a garden in the backyard so that we can stop eating ou
 
 <b>EDIT: My fiancé informed me that this is too "try-hard" for a simple garden, I disagree, and that she will NOT be using my hardware/software... Now I have something to prove!<b>
 
-asdasdsa
+## The Hardware
+
+asdada
