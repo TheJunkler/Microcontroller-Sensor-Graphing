@@ -64,8 +64,8 @@ The finished product works much better than I could have imagined! In addition t
 Native to Java (release 1.8):
 <ul>
   <li>Swing</li>
-  <li>Tea</li>
-  <li>Milk</li>
+  <li>AWT</li>
+  <li>Scanner Util</li>
 </ul>
 
 Open Source:
