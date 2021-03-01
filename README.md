@@ -7,7 +7,7 @@ My fiancé wants to start a garden in the backyard so that we can stop eating ou
 
 ## The Hardware
 
-For this project I decided to use Arduino-UNO and various low voltage sensors to make the device compact
+<i> For this project I decided to use Arduino-UNO and various low voltage sensors to make the device compact <\i>
 
  <b> DHT11 Temperature and Humidity Sensor 
  
