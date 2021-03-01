@@ -9,3 +9,4 @@ My fiancé wants to start a garden in the backyard so that we can stop eating ou
 
 For this project I decided to use Arduino-UNO and various low voltage sensors to make the device compact
 
+![wiringDiagram](https://user-images.githubusercontent.com/52724843/109441306-2f725280-79f2-11eb-949f-2661b88966e6.PNG)
