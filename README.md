@@ -23,4 +23,8 @@ My fiancé wants to start a garden in the backyard so that we can stop eating ou
 
  100k Ohm Resistor
  
- ![Resistor](https://user-images.githubusercontent.com/52724843/109441920-f20ec480-79f3-11eb-9b21-bca5ac6b1538.jpg)
+ ![Resistor](https://user-images.githubusercontent.com/52724843/109441920-f20ec480-79f3-11eb-9b21-bca5ac6b1538.jpg) </b>
+ 
+ ### Wiring Diagram
+ 
+![wiringDiagram](https://user-images.githubusercontent.com/52724843/109442099-72352a00-79f4-11eb-91a4-60e2a9712bfe.PNG)
