@@ -43,7 +43,7 @@ As you can see, when light is applied to the sensor the ADC reading shoots up to
 
 ### Java Programming
 
-<b>Starting Iteration</b>
+<b>First Iteration</b>
 
 With a steam of serial data now available, I then created a java program to take the data from one of the desired sensors on the Arduino (via USB port) and plots the stream in real-time to a line graph.
 
