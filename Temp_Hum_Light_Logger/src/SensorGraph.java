@@ -1,3 +1,5 @@
+// code is currently written for a single stream of sensor data, change line 46 for mutliple sensors
+
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -20,14 +22,12 @@ public class SensorGraph {
 
 	public static void main(String[] args) {
 		
-		// create and configure window
+		// create and configure window w/ drop-down box and "connect" button
 		JFrame window = new JFrame();
 		window.setTitle("Sensor Graph GUI");
 		window.setSize(1500, 900);
 		window.setLayout(new BorderLayout());
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
-		// create a drop-down box and connect button, then place them at the top of the window
 		JComboBox<String> portList = new JComboBox<String>();
 		JButton connectButton = new JButton("Connect");
 		JPanel topPanel = new JPanel();
@@ -35,23 +35,22 @@ public class SensorGraph {
 		topPanel.add(connectButton);
 		window.add(topPanel, BorderLayout.NORTH);
 		
-		// populate the drop-down box
-		SerialPort[] portNames = SerialPort.getCommPorts();
-			for(int i = 0; i < portNames.length; i++)
-				portList.addItem(portNames[i].getSystemPortName());
+		// populate the drop-down box using serial communication
+		SerialPort[] ports = SerialPort.getCommPorts();
+			for(int i = 0; i < ports.length; i++)
+				portList.addItem(ports[i].getSystemPortName());
 		
-		// create the line graph
+		// create the graph, in this case I went with a line graph
 		XYSeries series = new XYSeries("Light Sensor Readings");
 		XYSeriesCollection dataset = new XYSeriesCollection(series);
-		// dataset.addSeries(series); // This is where you will add multiple sensors ***
-		JFreeChart chart = ChartFactory.createXYLineChart("Light Sensor Readings", "Time (10 milliseconds)", "ADC Reading", dataset);
+		// dataset.addSeries(series); // this is where you can add multiple streams of serial data (for multiple sensors) **
+		JFreeChart chart = ChartFactory.createXYLineChart("Light Readings", "Time (10 milliseconds)", "ADC Reading", dataset);
 		window.add(new ChartPanel(chart), BorderLayout.CENTER);
 		
-		// configure the connect button and use another thread to listen for data
+		// equipt the connect button
 		connectButton.addActionListener(new ActionListener(){
 			@Override public void actionPerformed(ActionEvent arg0) {
 				if(connectButton.getText().equals("Connect"))	{
-					// attempt to connect to the serial port
 					chosenPort = SerialPort.getCommPort(portList.getSelectedItem().toString());
 					chosenPort.setComPortTimeouts(SerialPort.TIMEOUT_SCANNER, 0, 0);
 					if(chosenPort.openPort())	{
@@ -59,24 +58,24 @@ public class SensorGraph {
 						portList.setEnabled(false);
 					}
 					
-					// create a new thread that listens for incoming text and populates the graph
+					// thread that listens for incoming sensor text data from the Arduino and populates the graph
 					Thread thread = new Thread() {
 						@Override public void run()	{
-							Scanner scanner = new Scanner(chosenPort.getInputStream());
-							while(scanner.hasNextLine())	{
+							Scanner sc = new Scanner(chosenPort.getInputStream());
+							while(sc.hasNextLine())	{
 								try {
-									String line = scanner.nextLine();
+									String line = sc.nextLine();
 									int number = Integer.parseInt(line);
 									series.add(x++, number);
 									window.repaint();
 								} catch(Exception e) {}
 							}
-							scanner.close();
+							sc.close();
 						}
 					};
 					thread.start();
 				} else	{
-					// disconnect from the serial port
+					// disconnects from the USB serial port
 					chosenPort.closePort();
 					portList.setEnabled(true);
 					connectButton.setText("Connect");
@@ -86,7 +85,6 @@ public class SensorGraph {
 			}
 		});
 		
-		// show the window
 		window.setVisible(true);
 		
 	}
